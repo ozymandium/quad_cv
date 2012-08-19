@@ -1,0 +1,6 @@
+[
+# This repo
+{'git': {'local-name': 'quad-cv', 'uri': 'https://github.com/ozymandium/quad_cv.git', 'version': 'master'}},
+# libfreenect-goodies
+{'git': {'local-name': 'libfreenect-goodies', 'uri': 'https://github.com/amiller/libfreenect-goodies.git', 'version': 'master'}},
+]

@@ -1,0 +1,14 @@
+TO DO LIST
+==========
+
+investigate simplecv
+
+kinect in opencv?
+
+brightness
+
+kalman filter
+
+find hues
+
+queue for cam class?

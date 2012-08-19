@@ -1,0 +1,14 @@
+<package>
+  <description brief="rgb_cam">
+
+     rgb_cam
+
+  </description>
+  <author>Gavlab</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rgb_cam</url>
+
+</package>
+
+
