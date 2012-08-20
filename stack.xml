@@ -2,7 +2,7 @@
   
   <name>quad_cv</name>
   <version>0.0</version>
-  <description brief="quadrotor computer vision">
+  <description brief="quadrotor_computer_vision">
     Computer Vision stuff for use with GAVLab's quadrotor</description>
   <author>Robert Cofield</author>
   <maintainer email="robertgcofield@gmail.com">
@@ -14,6 +14,8 @@
   <depend stack="ros" />
   <depend stack="vision_opencv" />
   <depend stack="openni_kinect"/> <!-- includes all openni stuff -->
+  <depend stack="camera_umd"/>
+  <depend stack="image_pipeline"/>
   <!--   <depend stack="image_common" /> -->  
   <depend package="rospy" />
   <depend package="std_msgs" />

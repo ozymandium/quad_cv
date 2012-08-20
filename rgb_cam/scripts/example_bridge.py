@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import roslib
-roslib.load_manifest('my_package')
+roslib.load_manifest('rgb_cam')
 import sys
 import rospy
 import cv
