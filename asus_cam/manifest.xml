@@ -1,10 +1,10 @@
 <package>
   <description brief="asus_cam">
 
-     asus_cam
+     Getting depth data from ASUS Xtion PRO 3D camera
 
   </description>
-  <author>Gavlab</author>
+  <author>Robert Cofield</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/asus_cam</url>

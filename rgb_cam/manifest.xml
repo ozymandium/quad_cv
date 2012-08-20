@@ -4,13 +4,13 @@
      rgb_cam
 
   </description>
-  <author>Gavlab</author>
+  <author>Robert Cofield</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/rgb_cam</url>
 
-  <depend package="rospy"/>
-  <depend package="visualization_msgs"/>
+  <!-- <depend package="rospy"/> -->
+  <!-- <depend package="visualization_msgs"/> -->
 
 </package>
 

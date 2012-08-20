@@ -1,10 +1,10 @@
 <package>
   <description brief="quad_cv_launch">
 
-     quad_cv_launch
+     launch stuff for the combined vision of the quadrotor
 
   </description>
-  <author>Gavlab</author>
+  <author>Robert Cofield</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/quad_cv_launch</url>
