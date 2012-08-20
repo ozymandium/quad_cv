@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+__author__ = 'Robert Cofield'
+
 """
 1.  Obtain image containing tennis ball in live feed
 2.  Identify circles in feed
