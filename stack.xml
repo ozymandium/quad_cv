@@ -13,6 +13,11 @@
 
   <depend stack="ros" />
   <depend stack="vision_opencv" />
+  <depend stack="openni_kinect"/> <!-- includes all openni stuff -->
+  <depend stack="image_common" /> <!-- camera_info_manager, image_transport -->
   <depend package="rospy" />
+  <depend package="std_msgs" />
+  <depend stack="common_msgs" /> <!-- geometry_msgs, sensor_msgs, stereo_msgs -->
+  <depend stack="ros_comm" />
 
 </stack>

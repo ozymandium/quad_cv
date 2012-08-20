@@ -8,9 +8,9 @@ import roslib
 roslib.load_manifest('rgb_cam')
 import rospy
 import cv2.cv as cv
+from sensor_msgs.msg import Image
 import pdb
-import sys
-import os
+import sys, os
 
 
 cv.NamedWindow("rgb", 2)

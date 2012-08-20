@@ -10,6 +10,8 @@
   <url>http://ros.org/wiki/rgb_cam</url>
 
   <!-- <depend package="rospy"/> -->
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
   <!-- <depend package="visualization_msgs"/> -->
 
 </package>
