@@ -10,8 +10,6 @@ Computer Vision stuff for use with GAVLab's quadrotor
 
 - XBox Kinect
 
-- libfreenect
 
-
- # Installation #
+# Installation #
 Coming Soon!

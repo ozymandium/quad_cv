@@ -1,4 +1,6 @@
 [
 # This repo
 {'git': {'local-name': 'quad_cv', 'uri': 'https://github.com/ozymandium/quad_cv.git', 'version': 'master'}}
+# camera driver
+{'svn': {'local-name': 'gencam_cu', 'uri': 'http://prairiedog.googlecode.com/svn/trunk/gencam_cu'}}
 ]
