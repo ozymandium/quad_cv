@@ -23,5 +23,7 @@
   <!-- <depend package="std_msgs" /> -->
   <depend stack="common_msgs" />
   <depend stack="ros_comm" />
+  <depend stack="multi_master_fkie"/>
+  
 
 </stack>

@@ -7,14 +7,8 @@
 __author__ = 'Robert Cofield'
 
 import sys, os
-import roslib
-os.system('bash ~/devel/ros_package_path.bash')
-roslib.load_manifest('rgb_cam')
-import rospy
 import cv2.cv as cv
-from sensor_msgs.msg import Image
 import pdb
-from bridge import WebcamBridge
 
 
 def main():
@@ -97,5 +91,4 @@ def main():
 
 
 if __name__ == '__main__':
-    bridge = WebcamBridge()
     main()

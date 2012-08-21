@@ -2,6 +2,9 @@
 """
 Bridge for sending opencv images around. 
 designed for use with find_tennisball.py
+
+puts out:
+    
 """
 __author__ = 'Robert Cofield'
 
@@ -20,11 +23,10 @@ class WebcamBridge:
     """
     def __init__(self):
         self.image_pub = rospy.Publisher("/tennisballs", Image)
+        self.pose_pub = rospy.Publisher("")
         self.bridge = CvBridge()
-        self.image_sub = rospy.Subscriber("/image_raw", Image, self.callback)
-        
+        self.image_sub = rospy.Subscriber("/image_raw", Image, self.callback)       
         self.size = None
-
         rospy.sleep(1)
                   
     def callback(self, data):
@@ -44,9 +46,6 @@ class WebcamBridge:
     def find_tennisball(self, img):
         """ROS implementation of whatever is done in script find_tennisball.py
         """
-        print 'In find_tennisball'
-        
-        # capture = cv.CaptureFromCAM(-1)
         if not self.size:
             self.size = cv.GetSize(img)
               
@@ -54,11 +53,8 @@ class WebcamBridge:
         rgb = cv.CreateImage(self.size, 8, 3)
         cv.Copy(img, rgb)
         gray = cv.CreateImage(self.size, 8, 1)
-        # edges = cv.CreateImage(cv.GetSize(rgb), 8, 1)
         cv.CvtColor(rgb, gray, cv.CV_BGR2GRAY)
-        # cv.ShowImage("gray", gray)
         cv.Threshold(gray, gray, 205, 255, cv.CV_THRESH_BINARY)
-        # cv.ShowImage("thold - gray", gray)
         cv.Smooth(gray, gray, cv.CV_GAUSSIAN, 15, 15)
         storage = cv.CreateMat(1, rgb.height * rgb.width, cv.CV_32FC3)
         cv.HoughCircles(gray, storage, cv.CV_HOUGH_GRADIENT, \
@@ -67,9 +63,6 @@ class WebcamBridge:
         blu = cv.CreateImage(self.size, 8, 1)
         grn = cv.CreateImage(self.size, 8, 1)
         cv.Split(rgb, red, blu, grn, None)
-        # cv.ShowImage("red", red)
-        # cv.ShowImage("blue", blu)
-        # cv.ShowImage("green", grn)
 
         for i in range(storage.width - 1):
             center = (int(storage[0,i][0]), int(storage[0,i][1]))
@@ -86,12 +79,9 @@ def main():
         rospy.spin()
     except KeyboardInterrupt:
         print('Shutting Down')
-    # cv.DestroyAllWindows()
+    cv.DestroyAllWindows()
 
 
 if __name__ == '__main__':
-    # os.system('bash /home/gavlab/devel/ros_package_path.bash')
-    # cv.NamedWindow("CV Input", 2)
     main()
 
-# cv.NamedWindow("Fuck", 1)
