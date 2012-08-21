@@ -23,7 +23,7 @@ class WebcamBridge:
     """
     def __init__(self):
         self.image_pub = rospy.Publisher("/tennisballs", Image)
-        self.pose_pub = rospy.Publisher("")
+        # self.circ_ctr_pub = rospy.Publisher("/circ_ctr", )
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/image_raw", Image, self.callback)       
         self.size = None

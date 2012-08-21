@@ -5,8 +5,12 @@
   </include>
 
   <!-- Set the Kinect's parameters, like resolution -->
-  <param name="/kinect/driver/depth_mode" value="8"/>
-  <param name="/kinect/driver/image_mode" value="8"/>
-  <param name="/kinect/driver/depth_registration" value="true"/>
+  <!-- <param name="/kinect/driver/depth_mode" value="8"/> -->
+  <!-- <param name="/kinect/driver/image_mode" value="8"/> -->
+  <!-- <param name="/kinect/driver/depth_registration" value="true"/> -->
+
+  <!-- launch rviz -->
+  <node name="rviz" pkg="rviz" type="rviz"
+    args="-d $(find asus_cam)/general.vcg" required="true" output="screen"/>
 
 </launch>

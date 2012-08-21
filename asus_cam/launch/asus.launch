@@ -3,7 +3,7 @@
   <!-- Start the static transformations -->
   <include file="$(find openni_launch)/launch/openni.launch">
     <arg name="camera" value="asus"/>
-    <!-- <arg name="debug" value="true"/> -->
+    <arg name="debug" value="true"/>
   </include>
 
   <!-- Set the Kinect's parameters, like resolution -->
