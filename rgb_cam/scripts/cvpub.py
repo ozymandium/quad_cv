@@ -8,3 +8,10 @@ __author__ = 'Robert Cofield'
 import roslib
 roslib.load_manifest('rgb_cam')
 import rospy
+import sys, os
+
+
+class CVPub:
+
+    def __init__(self):
+        self.image_pub = rospy.Publisher("from_cv")
