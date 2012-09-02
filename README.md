@@ -13,3 +13,5 @@ Computer Vision stuff for use with GAVLab's quadrotor
 
 # Installation #
 Coming Soon!
+
+---This repo moved to Bitbucket---
